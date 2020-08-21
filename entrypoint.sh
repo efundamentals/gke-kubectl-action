@@ -2,6 +2,10 @@
 
 set -e
 
+# TODO: add here 
+#if [ ! -d "$HOME/.config/gcloud" ]; then.
+# and as else condition check if there was a change in the application credentials
+
 if [ -z "${APPLICATION_CREDENTIALS-}" ]; then
    echo "APPLICATION_CREDENTIALS not found. Exiting...."
    exit 1
